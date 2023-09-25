@@ -1,0 +1,50 @@
+Task1
+
+To check whether a contract has code or not using Solidity assembly, you can create a function like this:
+
+solidity
+Copy code
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract ContractCodeCheck {
+    // Function to check if a contract has code
+    function hasContractCode(address contractAddress) public view returns (bool) {
+        uint32 length;
+        assembly {
+            length := codelen(contractAddress)
+        }
+        return (length > 0);
+    }
+}
+
+
+--------------------------------------------------------------------------------------------
+Task 3
+
+Atomic swaps, often referred to as atomic cross-chain trading, provide a mechanism to directly 
+exchange cryptocurrencies between peers on several blockchains without the need for a middleman like an exchange.
+
+Decentralised- Atomic swaps are by their by nature decentralised and trustless. Since they are independent of middlemen, counterparty risk may be reduced.
+
+Security: Because atomic swaps use cryptographic methods to assure that funds are either fully swapped or not at all, they are made to be secure. Fraud risk is decreased as a result.
+
+Privacy: Since atomic swaps don't call for a central authority or middleman, they can help keep participants' personal information private by preventing the need to divulge it.
+
+Disadvantages- 
+Technical Difficulty: Atomic switch implementation might be technically challenging, particularly for non-technical users. It demands a solid grasp of cryptographic concepts and blockchain technologies.
+
+Limited enable: Not all cryptocurrencies may enable atomic swaps, which reduces the variety of assets that can be swapped in this fashion.
+Chain-Crossing Bridges:
+
+Cross-chain bridges are systems or protocols that make it easier to transfer assets between blockchain networks. In order to control the movement of assets between chains, they frequently rely on custodians or validators.
+Advantages-
+Simple- It is more user-friendly than atomic swaps.
+Great asset support- Bridges can support a wider range of assets because they don't rely on both blockchains implementing specific atomic swap protocols.
+Disadvantages-
+Cross-chain bridge bugs are software errors that affect the functionality and security of cross-chain bridges. 
+
+Centralization risks- Rely on custodians introduce the centralization risks.
+Cost: Utilising cross-chain bridges could result in payment for the services rendered, such as custody or transaction fees.
+
+Slower Settlement: Settlement on cross-chain bridges may not be as fast as atomic swaps, as it depends on the validation process and block confirmation times on the involved blockchains.
