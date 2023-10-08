@@ -5,3 +5,6 @@ Sorting and duplication removal Array Contract
 
 ![l1ss0](https://github.com/Reetika2706/ReetikaLab1/assets/145814923/1e52994d-f50d-4295-9c43-bc7b577cd660)
 
+Assignment 1
+![3](https://github.com/Reetika2706/ReetikaLab1/assets/145814923/10811e66-037c-4367-b096-4a820deb62fa)
+
